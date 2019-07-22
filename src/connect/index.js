@@ -100,13 +100,13 @@ export const ConnectEdit = (props) => (
                     <TextInput source="connectorConfig.topic" label="Edit a topic to write data" validate={[ required ]} />
                     <LongTextInput source="connectorConfig.schema_registry_uri" label="Schema Registry URI" validate={[ required ]} style={{ width: 500 }} />
                     <LongTextInput source="connectorConfig.prefix" label="Fetch file name prefix/subject" validate={[ required ]} style={{ width: 500 }} />
-                    <BooleanInput source="connectorConfig.purge" label="Purge SQS message?" defaultValue={true} />
-                    <LongTextInput source="connectorConfig.sqs_uri" label="AWS SQS URI" defaultValue="https://sqs.us-east-2.amazonaws.com/520169828690/netcdf-queue" validate={[ required ]} style={{ width: 500 }} />
+                    <BooleanInput source="connectorConfig.purge" label="Purge SQS message?"/>
+                    <LongTextInput source="connectorConfig.sqs_uri" label="AWS SQS URI" validate={[ required ]} style={{ width: 500 }} />
                     <SelectInput source="connectorConfig.sqs_region" label="AWS SQS Region" validate={[ required ]} choices={[
                             { id: 'us-east-1', name: 'us-east-1' },
                             { id: 'eu-west-2', name: 'eu-west-2' },
                     ]} />
-                    <LongTextInput source="connectorConfig.s3_bucket" label="AWS S3 bucket name to download the files" defaultValue={"aws-earth-mo-atmospheric-mogreps-uk-prd"} validate={[ required ]} />
+                    <LongTextInput source="connectorConfig.s3_bucket" label="AWS S3 bucket name to download the files" validate={[ required ]} />
                     <SelectInput source="connectorConfig.s3_region" label="AWS S3 Region" validate={[ required ]} choices={[
                             { id: 'eu-west-2', name: 'eu-west-2' },
                             { id: 'us-east-1', name: 'us-east-1' },
