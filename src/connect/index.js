@@ -219,7 +219,12 @@ export const ConnectCreate = (props) => (
                 <DependentInput dependsOn="connectorType" value="CONNECT_SOURCE_UKMEET_NetCDFFile">
                     <LongTextInput source="connectorConfig.topic" label="Automatically create a topic to write data" validate={[ required ]} style={{ width: 500 }} />
                     <LongTextInput source="connectorConfig.schema_registry_uri" label="Schema Registry URI" defaultValue="http://localhost:8081" validate={[ required ]} style={{ width: 500 }} />
-                    <LongTextInput source="connectorConfig.prefix" label="Fetch file name prefix/subject" defaultValue="surface_air_pressure" validate={[ required ]} style={{ width: 500 }} />
+                    <LongTextInput source="connectorConfig.prefix" label="Fetch file name with this prefix" defaultValue="surface_air_pressure" validate={[ required ]} style={{ width: 500 }} />
+                    <LongTextInput source="connectorConfig.var" label="Core variable to extract, default same to prefix" defaultValue="surface_air_pressure" validate={[ required ]} style={{ width: 500 }} />
+                    <SelectInput source="connectorConfig.coord" label="Coordinate system" validate={[ required ]} choices={[
+                            { id: 'projection_y_coordinate,projection_x_coordinate', name: 'Coordinate x/y' },
+                            { id: 'latitude,longitude', name: 'Latitude/Longitude' },
+                    ]} />
                     <BooleanInput source="connectorConfig.purge" label="Purge SQS message?" defaultValue={true} />
                     <LongTextInput source="connectorConfig.sqs_uri" label="AWS SQS URI" defaultValue="https://sqs.us-east-2.amazonaws.com/520169828690/netcdf-queue" validate={[ required ]} style={{ width: 500 }} />
                     <SelectInput source="connectorConfig.sqs_region" label="AWS SQS Region" validate={[ required ]} choices={[
