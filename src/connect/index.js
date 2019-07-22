@@ -222,7 +222,7 @@ export const ConnectCreate = (props) => (
                     <LongTextInput source="connectorConfig.prefix" label="Fetch file name with this prefix" defaultValue="surface_air_pressure" validate={[ required ]} style={{ width: 500 }} />
                     <LongTextInput source="connectorConfig.var" label="Core variable to extract, default same to prefix" defaultValue="surface_air_pressure" validate={[ required ]} style={{ width: 500 }} />
                     <SelectInput source="connectorConfig.coord" label="Coordinate system" validate={[ required ]} choices={[
-                            { id: 'projection_y_coordinate,projection_x_coordinate', name: 'Coordinate x/y' },
+                            { id: 'projection_y_coordinate,projection_x_coordinate', name: 'Coordinate y/x' },
                             { id: 'latitude,longitude', name: 'Latitude/Longitude' },
                     ]} />
                     <BooleanInput source="connectorConfig.purge" label="Purge SQS message?" defaultValue={true} />
