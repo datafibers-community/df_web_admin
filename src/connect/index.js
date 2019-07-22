@@ -111,7 +111,6 @@ export const ConnectEdit = (props) => (
                             { id: 'eu-west-2', name: 'eu-west-2' },
                             { id: 'us-east-1', name: 'us-east-1' },
                     ]} />
-                    <BooleanInput source="connectorConfig.purge" label="Edit if purge message and staging files" validate={[ required ]} />
                     <TextInput source="connectorConfig.s3_downloaddir" label="Edit path for staging files" validate={[ required ]} />
                     <NumberInput source="connectorConfig.interval" label="API Refresh Interval (sec.)" defaultValue={5} step={5} validate={[ required, minValue(5) ]} />
                 </DependentInput>
