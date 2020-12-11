@@ -178,6 +178,18 @@ anymatch@^1.3.0:
     micromatch "^2.1.5"
     normalize-path "^2.0.0"
 
+aor-dependent-input@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/aor-dependent-input/-/aor-dependent-input-1.2.0.tgz#a0d7294d204516283e3661a1fb59c969326121a5"
+  dependencies:
+    babel-plugin-transform-runtime "~6.23.0"
+    lodash.get "~4.4.2"
+    prop-types "~15.6.0"
+
+aor-language-chinese@^1.0.3:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/aor-language-chinese/-/aor-language-chinese-1.0.5.tgz#c30704512fc649203cd298f47f822e011575772c"
+
 aor-language-french@^1.8.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/aor-language-french/-/aor-language-french-1.9.0.tgz#ea839d159e67419a122aaeb8284e136c7b04b415"
@@ -899,7 +911,7 @@ babel-plugin-transform-regenerator@6.24.1, babel-plugin-transform-regenerator@^6
   dependencies:
     regenerator-transform "0.9.11"
 
-babel-plugin-transform-runtime@6.23.0:
+babel-plugin-transform-runtime@6.23.0, babel-plugin-transform-runtime@~6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz#88490d446502ea9b8e7efb0fe09ec4d99479b1ee"
   dependencies:
@@ -3248,8 +3260,8 @@ inherits@2.0.1:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
 
 ini@^1.3.4, ini@~1.3.0:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
 
 inline-style-prefixer@^3.0.2:
   version "3.0.8"
@@ -5185,6 +5197,13 @@ prop-types@^15.6.0:
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
     fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
+prop-types@~15.6.0:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
